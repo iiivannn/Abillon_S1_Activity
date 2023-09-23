@@ -1,6 +1,13 @@
 <!DOCTYPE html> 
 <html>
     <head>
+        <!-- 
+            A. meta
+                i. 1st meta means setting up the characters that the website can use upon loading
+                ii. 2nd meta means visible screen, content size, and scale or zoom
+         -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Session1_IvanAbillon</title>
     </head>
 
@@ -9,7 +16,7 @@
             1. strong
                 -makes text bold            
          -->
-        <p>
+        <p id="home">
             <strong>Hi!</strong> 
             I am Ivan Abillon
         </p>
@@ -152,6 +159,53 @@
                 </tr>
             </tfoot>
         </table>
+        <br>
 
+        <!-- 
+            B. section
+                -group of related content in the body 
+            C. div
+                -a blank container for other HTML elements
+            D. article
+                -an independent self-contained content
+            E. img
+                -used to insert pictures/image
+            F. a or anchor 
+                -acts like a hyperlink
+            G. form
+                -collect user input
+            H. label
+                -show labels
+            I. input
+                -lets the user input data
+            J. button
+                -shows a clickable button
+         -->
+
+        <section>
+            This is the start of the section
+            <div>
+                Hi, I'm a div!<br>
+            </div>
+            <article>
+                Im an article!<br>
+            </article>
+            <img src="https://www.dictionary.com/e/wp-content/uploads/2021/02/20210202_atw_stonks_800x800.png" width="200" height="120"> 
+            <br>
+            <a href="#home">anchor tag</a>      
+        </section>
+
+        <form> 
+            <label for="nameF">First Name:</label>
+            <input type="text" id="nameF">
+            <br>
+
+            <label for="nameL">Last Name:</label>
+            <input type="text" id="nameL">
+            <br>
+            
+            <button type="button" onclick="alert('Submitted!')">Submit</button>
+            
+        </form>
     </body>
 </html>
